@@ -26,7 +26,7 @@ public class Nd4jEx3_GettingAndSettingSubsets {
 
         //We can use getRow and getColumn operations to get a row or column respectively:
         INDArray firstRow = originalArray.getRow(0);
-        INDArray lastColumn = originalArray.getColumn(4);
+        INDArray lastColumn = originalArray.getColumns(4);
         System.out.println();
         System.out.println("First row:\n" + firstRow);
         System.out.println("Last column:\n" + lastColumn);
